@@ -15,20 +15,20 @@ gpg --list-keys
 
 Export private key:
 ```bash
-gpg --output private.key --armor --export-secret-key shubhamtatvamasi@gmail.com
+gpg --output private.pgp --armor --export-secret-key shubhamtatvamasi@gmail.com
 ```
 
 Convert Private key to base64:
 ```bash
 # Encode
-PRIVATE_KEY=$(cat private.key | base64); echo ${PRIVATE_KEY} > private.key
+PRIVATE_KEY=$(cat private.pgp | base64); echo ${PRIVATE_KEY} > private.pgp
 # Decode
-PRIVATE_KEY=$(cat private.key | base64 -d); echo ${PRIVATE_KEY} > private.key
+PRIVATE_KEY=$(cat private.pgp | base64 -d); echo ${PRIVATE_KEY} > private.pgp
 ```
 
 Import key:
 ```bash
-gpg --import private.key
+gpg --import private.pgp
 ```
 
 Delete keys:
@@ -48,7 +48,7 @@ gpg --send-keys 0F195430352D314080C96E67B76BE3858E1FDB4F
 
 Get your Public Key
 ```bash
-gpg --output public.key --armor --export shubhamtatvamasi@gmail.com
+gpg --output public.pgp --armor --export shubhamtatvamasi@gmail.com
 ```
 ---
 

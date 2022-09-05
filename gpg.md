@@ -29,7 +29,6 @@ PRIVATE_KEY=$(cat private.key | base64 -d); echo ${PRIVATE_KEY} > private.key
 Import key:
 ```bash
 gpg --import private.key
-cat private.key | base64 -d | gpg --import -
 ```
 
 Delete keys:

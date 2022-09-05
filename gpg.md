@@ -26,8 +26,8 @@ cat private.key | base64 -d | gpg --import -
 
 Delete keys:
 ```bash
-gpg --delete-secret-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494
-gpg --delete-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494
+gpg --delete-secret-keys shubhamtatvamasi@gmail.com
+gpg --delete-keys shubhamtatvamasi@gmail.com
 ```
 
 ---

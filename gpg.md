@@ -52,6 +52,14 @@ gpg --output public.key --armor --export shubhamtatvamasi@gmail.com
 ```
 ---
 
+### decrypt messages
+
+```bash
+gpg --decrypt message.pgp
+```
+
+---
+
 ### Install
 
 Install Gnu GPG tool:

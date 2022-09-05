@@ -1,5 +1,7 @@
 # GPG
 
+### Setup
+
 Generate new key:
 ```bash
 gpg --expert --full-gen-key
@@ -25,6 +27,17 @@ Delete keys:
 gpg --delete-secret-keys 74F6A05787B8EB830A61994A7872F37A0D8C34F6
 gpg --delete-keys 74F6A05787B8EB830A61994A7872F37A0D8C34F6
 ```
+
+---
+
+### keyserver
+
+Get your Public Key
+```bash
+gpg --armor --export shubhamtatvamasi@gmail.com
+```
+
+Upload it to: https://keyserver.ubuntu.com
 
 ---
 

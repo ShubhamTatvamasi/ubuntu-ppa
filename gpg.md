@@ -15,7 +15,7 @@ gpg --list-keys
 
 Export private key:
 ```bash
-gpg --export-secret-keys BDA80C28141B91819D48CAF2A4C0B31C7875404B | base64 > private.key
+gpg --export-secret-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494 | base64 > private.key
 ```
 
 Import key:
@@ -25,8 +25,8 @@ cat private.key | base64 -d | gpg --import -
 
 Delete keys:
 ```bash
-gpg --delete-secret-keys BDA80C28141B91819D48CAF2A4C0B31C7875404B
-gpg --delete-keys BDA80C28141B91819D48CAF2A4C0B31C7875404B
+gpg --delete-secret-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494
+gpg --delete-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494
 ```
 
 ---

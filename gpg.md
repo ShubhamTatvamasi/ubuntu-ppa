@@ -60,6 +60,15 @@ gpg --decrypt message.pgp
 
 ---
 
+### sign
+
+Sign Ubuntu Contract:
+```bash
+gpg --clearsign UbuntuCodeofConduct-2.0.txt
+```
+
+---
+
 ### Install
 
 Install Gnu GPG tool:

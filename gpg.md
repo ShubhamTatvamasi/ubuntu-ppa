@@ -16,11 +16,11 @@ gpg --list-keys
 Export private key:
 ```bash
 gpg --output private.key --armor --export-secret-key shubhamtatvamasi@gmail.com
-gpg --export-secret-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494 | base64 > private.key
 ```
 
 Import key:
 ```bash
+gpg --import private.key
 cat private.key | base64 -d | gpg --import -
 ```
 
@@ -36,7 +36,7 @@ gpg --delete-keys shubhamtatvamasi@gmail.com
 
 Upload your public key to: https://keyserver.ubuntu.com
 ```bash
-gpg --send-keys 0F195430352D314080C96E67B76BE3858E1FDB4F
+gpg --send-keys shubhamtatvamasi@gmail.com
 ```
 
 Get your Public Key

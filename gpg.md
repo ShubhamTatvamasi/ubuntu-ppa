@@ -33,7 +33,7 @@ gpg --delete-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494
 
 ### keyserver
 
-Upload it to: https://keyserver.ubuntu.com
+Upload your public key to: https://keyserver.ubuntu.com
 ```bash
 gpg --send-keys 0F195430352D314080C96E67B76BE3858E1FDB4F
 ```

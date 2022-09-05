@@ -15,7 +15,7 @@ gpg --list-keys
 
 Export private key:
 ```bash
-gpg --armor --export-secret-key shubhamtatvamasi@gmail.com --output private.key
+gpg --output private.key --armor --export-secret-key shubhamtatvamasi@gmail.com
 gpg --export-secret-keys C12BA9B9AC50B47C2EC87B5A3767E58D5D276494 | base64 > private.key
 ```
 
@@ -41,7 +41,7 @@ gpg --send-keys 0F195430352D314080C96E67B76BE3858E1FDB4F
 
 Get your Public Key
 ```bash
-gpg --armor --export shubhamtatvamasi@gmail.com
+gpg --output public.key --armor --export shubhamtatvamasi@gmail.com
 ```
 ---
 

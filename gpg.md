@@ -36,7 +36,7 @@ gpg --delete-keys shubhamtatvamasi@gmail.com
 
 Upload your public key to: https://keyserver.ubuntu.com
 ```bash
-gpg --send-keys shubhamtatvamasi@gmail.com
+gpg --send-keys 0F195430352D314080C96E67B76BE3858E1FDB4F
 ```
 
 Get your Public Key

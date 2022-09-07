@@ -6,7 +6,7 @@ Generate new key:
 ```bash
 gpg --expert --full-gen-key
 ```
-> Elliptic curve keys are not supported.
+> Elliptic curve keys are not supported. Create `RSA and RSA` key.
 
 List your keys:
 ```bash

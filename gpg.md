@@ -21,9 +21,9 @@ gpg --output private.pgp --armor --export-secret-key shubhamtatvamasi@gmail.com
 Convert Private key to base64:
 ```bash
 # Encode
-PRIVATE_KEY=$(cat private.pgp | base64); echo ${PRIVATE_KEY} > private.pgp
+bash -c "echo '$(cat private.pgp | base64)'" > private.pgp
 # Decode
-PRIVATE_KEY=$(cat private.pgp | base64 -d); echo ${PRIVATE_KEY} > private.pgp
+bash -c "echo '$(cat private.pgp | base64 -d)'" > private.pgp
 ```
 
 Import key:
